@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms using-AttributeSelectors</title>
+    <link  rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    
+
+        <div class="attributeselectorContainer">
+
+            <form>
+                <fieldset>
+                    <legend>SignupForm</legend>
+                    <label for="name">Name:</label><br/>
+                    <input type="text" id="name" name="name" placeholder="Enter your Name"    value="" required/>
+                    <br/>
+                    <label for="first-name">FirstName:</label><br>
+                    <input type="text" id="first-name" name="fname"     placeholder="Enter your FirstName" value=""  required/>
+                    <br/>
+                    <label for="last-names">LastName:</label><br>
+                    <input type="text" id="last-names" name="lname"placeholder="Enter your LastName"    value="" required/>
+                    <br/>
+                    <label for="email-mail">Email</label><br>
+                    <input type="email" id="email-mail" name="email" placeholder="Enter your Emailid"  value="" required/>
+
+                    <br/>
+                    <label for="Gender">Gender:</label><br>
+                 <label><input type="radio" id="Gender" name="Gender" value="" required/>Male</label>   
+                 <label><input type="radio" id="Gender" name="Gender" value="" required/>Female</label>   
+                 <label><input type="radio" id="Gender" name="Gender" value="" required/>Others</label>    
+                <br/>
+
+                <label for="country">Country:</label><br><br>
+                <select id="country" name="country" required>
+                    <option>Select your country</option>
+                    <option>India</option>
+                    <option>China</option>
+                    <option>Australia</option>
+
+                </select>
+                <br><br>
+                <div class="btt"> 
+                <button class="button1">Register</button>
+                <button class="button1">Click Here to Login!</button>
+                </div>
+                </fieldset>
+
+
+                
+            </form>
+            
+
+
+        </div>
+
+
+</body>
+</html>
