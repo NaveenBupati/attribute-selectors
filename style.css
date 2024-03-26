@@ -1,0 +1,102 @@
+
+
+
+ *{
+    
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    
+ }
+
+
+ 
+
+.attributeselectorContainer{
+
+    width: 80%;
+    /* border: 2px solid black; */
+    /* height: 500px; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+
+}
+
+ /* selecting through attribute selectors with no value */
+input[required]{
+
+    background-color: #f0f2f5;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border: none;
+}
+
+
+/* selecting through attribute selectors with  value */
+
+input[id="name"]{
+   width: 99%;
+   height: 40px;
+}
+
+/* if we have - between words in attributes we use!= it will conisider the textbefore the icon it will not consider the after the - */
+
+input[id|="first"]{
+   width: 99%;
+   height: 40px;
+    margin: 10px;
+}
+
+input[id|="last"]{
+   width: 99%;
+   height: 40px;
+    margin: 10px;
+}
+
+select[id$="try"]{
+   width: 99%;
+   height: 40px;
+    background-color: #f0f2f5;
+}
+
+input[id~="name"]{
+    color: green
+}
+ 
+input[id|="email"]{
+    width: 99%;
+    height: 40px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    text-indent: 10px;
+}
+
+select{
+    border: none;
+    display: grid;
+}
+
+
+
+.btt{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+.button1{
+    background-color: #1877F2;  
+    color: #FFFFFF; 
+    padding: 10px 20px;  
+    border: none;
+    border-radius: 5px;  
+    font-size: 16px;  
+    cursor: pointer; 
+    margin: auto;
+}
+
+ 
